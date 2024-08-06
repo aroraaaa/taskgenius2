@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+}
+.container h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #1e1e1e;
+    position: relative;
+}
+
+.box h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.box form {
+    width: 100%;
+}
+
+.box input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.box button {
+    padding: 12px;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.first-button{
+    width: 100%;
+}
+
+.box button:hover {
+    background: linear-gradient(90deg, #5b0f99 0%, #1e5fc1 100%);
+}
+
+.box p {
+    color: red;
+    margin-top: 10px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.question {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.toggle {
+    cursor: pointer;
+    color: #6a11cb;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.toggle:hover {
+    color: #5b0f99;
+}
+.sec-button{
+    width: 40%;
+}
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1); 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    animation: spin 1s linear infinite; 
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
